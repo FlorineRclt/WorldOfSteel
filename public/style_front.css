@@ -1,0 +1,45 @@
+
+
+/***HOME***/
+
+.accueil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh auto;
+    border: solid 1px white;
+    border-radius: 25px;
+    padding: 5vh 0;
+    width: 95%;
+}
+.img-accueil {
+    width: 35%;
+    border-radius: 15px;
+    /*border: solid 1px black;*/
+    overflow: hidden;
+    /*box-shadow: #48012859 1px 3px 20px 0px;*/
+    height: border-box;
+    margin-right: 25px;
+}
+
+.text-accueil {
+    width: 45%;
+}
+
+.titre-accueil {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 3vh;
+}
+
+.sous-titre-accueil {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+
+.contenu-accueil {
+    font-size: 21px;
+    font-weight: 300;
+}
