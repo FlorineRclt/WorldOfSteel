@@ -35,7 +35,7 @@ class Item
     /**
      * @ORM\Column(type="date")
      */
-    private $publication_date;
+    private $publicationDate;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -55,7 +55,7 @@ class Item
     /**
      * @ORM\Column(type="string", length=10, nullable=true)
      */
-    private $phone_number;
+    private $phoneNumber;
 
     public function getId(): ?int
     {
@@ -100,12 +100,12 @@ class Item
 
     public function getPublicationDate(): ?\DateTimeInterface
     {
-        return $this->publication_date;
+        return $this->publicationDate;
     }
 
-    public function setPublicationDate(\DateTimeInterface $publication_date): self
+    public function setPublicationDate(\DateTimeInterface $publicationDate): self
     {
-        $this->publication_date = $publication_date;
+        $this->publicationDate = $publicationDate;
 
         return $this;
     }
@@ -148,12 +148,12 @@ class Item
 
     public function getPhoneNumber(): ?int
     {
-        return $this->phone_number;
+        return $this->phoneNumber;
     }
 
-    public function setPhoneNumber(?int $phone_number): self
+    public function setPhoneNumber(?int $phoneNumber): self
     {
-        $this->phone_number = $phone_number;
+        $this->phoneNumber = $phoneNumber;
 
         return $this;
     }

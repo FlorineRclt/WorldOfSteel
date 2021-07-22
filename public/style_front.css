@@ -12,14 +12,24 @@
     padding: 5vh 0;
     width: 95%;
 }
+.img-bal-accueil {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    transform: scale(1.012);
+
+}
 .img-accueil {
+    /*position: relative;*/
+    /*height: 50vh;*/
     width: 35%;
     border-radius: 15px;
     /*border: solid 1px black;*/
     overflow: hidden;
     /*box-shadow: #48012859 1px 3px 20px 0px;*/
-    height: border-box;
+    /*height: border-box;*/
     margin-right: 25px;
+    background-size: cover;
 }
 
 .text-accueil {

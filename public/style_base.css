@@ -119,7 +119,9 @@ main {
 
     height: 75vh;
     overflow: scroll;
-    border: ;
+    /*scrollbar-color: white;*/
+    /*scrollbar-width: thin;*/
+    /*border: ;*/
 }
 
 

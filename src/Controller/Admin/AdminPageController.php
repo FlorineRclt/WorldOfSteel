@@ -10,10 +10,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminPageController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/admin/", name="adminHome")
      */
     public function home ()
     {
-        return $this->render('Front/home.html.twig');
+        return $this->render('Admin/admin_home.html.twig');
     }
 }

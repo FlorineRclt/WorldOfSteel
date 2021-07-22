@@ -4,7 +4,9 @@
 namespace App\Controller\Front;
 
 
-class CategoryController
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+class CategoryController extends AbstractController
 {
 
 }
