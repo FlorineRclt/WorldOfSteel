@@ -1,5 +1,18 @@
 {% extends 'Front/base.html.twig' %}
 
 {% block main %}
-<p>test front</p>
+
+    {% for item in items %}
+        <div>
+            <img src="" alt="">
+            <h3> {{ item.title }}</h3>
+            <p>{{ item.city }}, {{ item.zipcode }}</p>
+            <p>{{ item.price }}€</p>
+            <p>{{ item.publicationDate | date('d-m-y') }}</p>
+
+        </div>
+
+    {% endfor %}
+
+
 {% endblock main %}
