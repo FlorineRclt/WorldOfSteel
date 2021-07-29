@@ -53,3 +53,20 @@
     font-size: 21px;
     font-weight: 300;
 }
+
+
+/***PETITES ANNONCES***/
+
+.annonce {
+    border: solid 1px white;
+    border-radius: 25px;
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+
+
+}
+
+.price {
+    text-align: right;
+}
