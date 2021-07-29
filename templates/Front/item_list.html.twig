@@ -4,20 +4,22 @@
 
 {#    {% for category in categories %}#}
 {#        <div class="categories-bar">#}
-{#            <p>{{ category.name }}</p>#}
+{#            <a href="{{ path('categoryShow', {'id': category.id}) }}">{{ category.name }}</a>#}
 {#        </div>#}
 {#    {% endfor %}#}
 
     {% for item in items %}
-        <div class="annonce">
-            <img src="" alt="">
-            <h3> {{ item.title }}</h3>
-            <p>{{ item.city }}, {{ item.zipcode }}</p>
-            <p class="price">{{ item.price }}€</p>
-            <p>{{ item.publicationDate | date('d-m-y') }}</p>
-            <p>{{ item.category.name }}</p>
+        <a href="{{ path('itemShow', {'id' : item.id}) }}">
+            <div class="annonce">
+                <img src="" alt="">
+                <h3> {{ item.title }}</h3>
+                <p>{{ item.city }}, {{ item.zipcode }}</p>
+                <p class="price">{{ item.price }}€</p>
+                <p>{{ item.publicationDate | date('d-m-y') }}</p>
+                <p>{{ item.category.name }}</p>
 
-        </div>
+            </div>
+        </a>
 
 
     {% endfor %}

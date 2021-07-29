@@ -1,0 +1,31 @@
+{% extends 'Front/base.html.twig' %}
+
+{% block metaTitle %}{% endblock metaTitle %}
+
+{% block main %}
+{#    <div id="page-cat">#}
+{#        <h2>{{ category.title }}</h2>#}
+{#        <p>{{ category.description }}</p>#}
+{#        {% for article in category.articles %}#}
+{#            <div class="article">#}
+{#                <h3><a href="{{ path('articleShow', {'id': article.id}) }}">{{ article.title }}</a></h3>#}
+{#                <p>{{ article.content }}</p>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </div>#}
+
+    <p>Annonces dans la catégorie {{ category.name }} :</p>
+    {% for item in category.items %}
+
+        <div class="annonce">
+            <img src="" alt="">
+            <h3> {{ item.title }}</h3>
+            <p>{{ item.city }}, {{ item.zipcode }}</p>
+            <p class="price">{{ item.price }}€</p>
+            <p>{{ item.publicationDate | date('d-m-y') }}</p>
+            <p>{{ item.category.name }}</p>
+
+        </div>
+    {% endfor %}
+
+{% endblock main %}
